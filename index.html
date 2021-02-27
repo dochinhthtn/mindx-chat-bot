@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+        integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"
+        integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A=="
+        crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="../../fontawesome/css/all.min.css">
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBkD3hLdXx4oKOdTSfmjZ9eKuVo9zn9810",
+            authDomain: "chat-bot-f83a8.firebaseapp.com",
+            projectId: "chat-bot-f83a8",
+            storageBucket: "chat-bot-f83a8.appspot.com",
+            messagingSenderId: "243513189425",
+            appId: "1:243513189425:web:2b15c2b5bf07203c11e110"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="//unpkg.com/navigo@6"></script>
+
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="app">
+        <chat-screen></chat-screen>
+    </div>
+    <script src="./js/router.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
+
+</body>
+
+</html>
